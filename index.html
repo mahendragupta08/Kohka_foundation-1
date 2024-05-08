@@ -32,6 +32,22 @@
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <!-- new stick button changes -->
+    <!-- <button style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer; z-index: 1000;" onmouseover="this.style.backgroundColor='#d32f2f'" onmouseout="this.style.backgroundColor='#f44336'">Donate Now</button> -->
+    <button id="donate-button" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer; z-index: 1000;" onmouseover="this.style.backgroundColor='#d32f2f'" onmouseout="this.style.backgroundColor='#f44336'" onclick="window.location.href = 'donate.html';">Donate Now</button>
+
+    <script>
+      window.addEventListener('resize', function() {
+        var donateButton = document.getElementById('donate-button');
+  
+        if (window.innerWidth <= 600) {
+          donateButton.textContent = 'Donate';
+        } else {
+          donateButton.textContent = 'Donate Now';
+        }
+      });
+    </script>
+    <!-- new stick button changes end -->
     <div class="container">
       <img src="images/kf.jpg" style="border-radius: 50%;margin: 1px 15px;height:50px;overflow: hidden;">
       <a class="navbar-brand" href="index.html">Kohka Foundation</a>
