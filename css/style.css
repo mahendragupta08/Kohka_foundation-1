@@ -7640,20 +7640,20 @@ h1, h2, h3, h4, h5,
         background: #873632;
         color: #fff; }
   .btn.btn-secondary {
-    background: #9E7161;
-    border: 1px solid #9E7161;
+    background: #f7fad7;
+    border: 1px solid #f7fad7;
     color: #fff; }
     .btn.btn-secondary:hover {
-      border: 1px solid #9E7161;
+      border: 1px solid #f7fad7;
       background: transparent;
-      color: #9E7161; }
+      color: #f7fad7; }
     .btn.btn-secondary.btn-outline-secondary {
-      border: 1px solid #9E7161;
+      border: 1px solid #f7fad7;
       background: transparent;
-      color: #9E7161; }
+      color: #f7fad7; }
       .btn.btn-secondary.btn-outline-secondary:hover {
         border: 1px solid transparent;
-        background: #9E7161;
+        background: #f7fad7;
         color: #fff; }
   .btn.btn-white {
     background: #fff;
@@ -7706,9 +7706,9 @@ h1, h2, h3, h4, h5,
     .ftco-intro .block-18.color-1 {
       background: #873632; }
     .ftco-intro .block-18.color-2 {
-      background: #9E7161; }
+      background: #f7fad7; }
     .ftco-intro .block-18.color-3 {
-      background: #CAAE9F; }
+      background: #F7FAF4; }
     .ftco-intro .block-18 .text strong {
       font-size: 60px;
       color: #000;
@@ -8818,7 +8818,7 @@ textarea.form-control {
       background: #873632; }
 
 .contact-section .contact-info p a {
-  color: #9E7161; }
+  color: #f7fad7; }
 
 .contact-section .contact-info p span {
   color: #000; }

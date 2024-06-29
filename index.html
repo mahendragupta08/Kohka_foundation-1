@@ -32,8 +32,25 @@
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <!-- new stick button changes -->
+    <!-- <button style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer; z-index: 1000;" onmouseover="this.style.backgroundColor='#d32f2f'" onmouseout="this.style.backgroundColor='#f44336'">Donate Now</button> -->
+    <button id="donate-button" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer; z-index: 1000;" onmouseover="this.style.backgroundColor='#d32f2f'" onmouseout="this.style.backgroundColor='#f44336'" onclick="window.location.href = 'donate.html';">Donate Now</button>
+
+    <script>
+      window.addEventListener('resize', function() {
+        var donateButton = document.getElementById('donate-button');
+  
+        if (window.innerWidth <= 600) {
+          donateButton.textContent = 'Donate';
+        } else {
+          donateButton.textContent = 'Donate Now';
+        }
+      });
+    </script>
+    <!-- new stick button changes end -->
     <div class="container">
-      <a class="navbar-brand" href="index.html">Kohka Foundation</a>
+      <img src="images/kf.jpg" style="border-radius: 50%;margin: 1px 15px;height:50px;overflow: hidden;">
+      <a class="navbar-brand" href="index.html" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Kohka Foundation</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -44,9 +61,9 @@
           <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
           <li class="nav-item"><a href="causes.html" class="nav-link">Causes</a></li>
           <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
           <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="Media_Press.html" class="nav-link">Media & Press</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </div>
@@ -60,10 +77,12 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Doing Nothing is Not An Option of Our Life</h1>
-            <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Empowering communities, transforming lives <a href="#">Worth</a></p>
-
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="https://www.youtube.com/watch?v=czVz47n8X_0" class="btn btn-white btn-outline-white px-4 py-3 popup-youtube"><span class="icon-play mr-2"></span>Our Intiatives</a></p>
+            <!-- <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Doing Nothing is Not An Option of Our Life</h1> -->
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Leave the world a better place. Start now.</h1>
+            <!-- <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Empowering communities, transforming lives <a href="#">Worth</a></p> -->
+            <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Empowering Communities, Transforming Lives.</p>
+            <!-- <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="https://www.youtube.com/watch?v=czVz47n8X_0" class="btn btn-white btn-outline-white px-4 py-3 popup-youtube"><span class="icon-play mr-2"></span>Our Intiatives</a></p> -->
+            <p><a href="/Kohka_foundation-draft/causes.html" class="btn btn-white btn-outline-white px-4 py-3">Our Causes</a></p>
           </div>
         </div>
       </div>
@@ -76,8 +95,11 @@
             <div class="block-18 color-1 align-items-stretch">
               <div class="text">
               	<span>Served Over</span>
-                <strong class="number" data-number="44185">0</strong>
-                <span>Madhya Pradesh including rural tribals, children and self-help groups.</span>
+                <!-- <strong class="number" data-number="44185">0</strong>
+                <span>Madhya Pradesh including rural tribals, children and self-help groups.</span> -->
+                <strong class="number" data-number="107590">0</strong>
+                <span> Indians across Madhya Pradesh and Maharashtra from our 
+                  inception in 2014.</span>
               </div>
             </div>
           </div>
@@ -85,9 +107,11 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 color-2 align-items-stretch">
               <div class="text">
-              	<h3 class="mb-4">Donate Money</h3>
+              	<!-- <h3 class="mb-4">Donate Money</h3>
               	<p>Generosity is not about how much we give, but how much love we put into giving.</p>
-              	<p><a href="#" class="btn btn-white px-3 py-2 mt-2">Donate Now</a></p>
+              	<p><a href="#" class="btn btn-white px-3 py-2 mt-2">Donate Now</a></p> -->
+                <h3 class="mb-4">Support our Cause</h3>
+              	<p>Help us empower underserved communities. Invest in the future, donate today.</p>
               </div>
             </div>
           </div>
@@ -104,7 +128,7 @@
     	</div>
     </section>
 
-    <section class="ftco-section">
+    <!-- <section class="ftco-section">
     	<div class="container">
     		<div class="row">
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
@@ -137,7 +161,7 @@
           </div>
         </div>
     	</div>
-    </section>
+    </section> -->
 
 
     <section class="ftco-section bg-light">
@@ -154,7 +178,7 @@
               <!-- 1 -->
 	    				<div class="item">
 	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-1.jpg);"></a>
+		    					<a href="#" class="img" style="background-image: url(images/Gallery/NishaWadiaHospital.jpeg);"></a>
                   <div class="text p-3 p-md-4">
                     <h3><a href="#"> Nisha, Wadia Hospital</a></h3>
                     <p>Healthcare of Rs, 2 lakhs for 12-year-old Nisha Chaurasiya who was suffering from Juvenile Deaumatomydic. </p>
@@ -164,7 +188,7 @@
               <!-- 2 -->
 	    				<div class="item">
 	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-1.jpg);"></a>
+		    					<a href="#" class="img" style="background-image: url(images/Gallery/computerLiteracy.jpg);"></a>
 		    					<div class="text p-3 p-md-4">
                     <h3><a href="#">Computer Litreracy</a></h3>
                     <p>Computer Classes for MNB Industrial Home for the Blind and for sex worker communities in Mumbai</p>
@@ -174,7 +198,7 @@
               <!-- 3 -->
               <div class="item">
 	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-1.jpg);"></a>
+		    					<a href="#" class="img" style="background-image: url(images/Gallery/comp-img.jpg);"></a>
                   <div class="text p-3 p-md-4">
                     <h3><a href="#">Secondary Education</a></h3>
                     <p>Online classes for supplementary maths education for 8th, 9th and 10th grade student</p>
@@ -185,7 +209,7 @@
              
                <div class="item">
 	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-1.jpg);"></a>
+		    					<a href="#" class="img" style="background-image: url(images/Gallery/skill\ dev.jpg);"></a>
                   <div class="text p-3 p-md-4">
                     <h3><a href="#">Skill Development</a></h3>
                     <p>Block-Printing, Tailoring, Candle and Diya making training for
@@ -275,7 +299,7 @@
 	    </div>
     </section>
 
-    <section class="ftco-section">
+    <!-- <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
@@ -290,8 +314,10 @@
               </a>
               <div class="text p-4 d-block">
               	<div class="meta mb-3">
+                -->
                   <!-- <div><a href="#">Sept 10, 2018</a></div> -->
                   <!-- <div><a href="#">Admin</a></div> -->
+                <!-- 
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
                 <h3 class="heading mt-3"><a href="#">Sample Blog</a></h3>
@@ -305,8 +331,10 @@
               </a>
               <div class="text p-4 d-block">
               	<div class="meta mb-3">
+                   -->
                   <!-- <div><a href="#">Sept 10, 2018</a></div> -->
                   <!-- <div><a href="#">Admin</a></div> -->
+                  <!--
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
                 <h3 class="heading mt-3"><a href="#">Sample Blog</a></h3>
@@ -321,8 +349,10 @@
               </a>
               <div class="text p-4 d-block">
               	<div class="meta mb-3">
+                  -->
                   <!-- <div><a href="#">Sept 10, 2018</a></div> -->
                   <!-- <div><a href="#">Admin</a></div> -->
+                   <!--
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
                 <h3 class="heading mt-3"><a href="#">Sample Blog</a></h3>
@@ -333,9 +363,31 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="ftco-section bg-light">
+    <!-- //udpdated facebook section starts-->
+  <section class="ftco-section-3 img" style="background-image: url(images/bg_3.jpg); background-size: cover; background-position: center; border-radius: 10%;">
+    <div class="overlay"></div>
+    <div class="container" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="row d-md-flex">
+            <div class="col-md-6 d-flex align-items-center ftco-animate" style="min-height: 500px;">
+                <div class="img img-2 align-self-stretch" style="background-image: url(images/bg_1.jpg); border-radius: 3%;"></div>
+            </div>
+            <div class="col-md-6 volunteer pl-md-5 ftco-animate" style="min-height: 500px;">
+                <h3 class="mb-3" style="color: #ffffff;">Follow our journey!</h3>
+                <!-- Embedded Facebook Page using iframe -->
+                <div class="fb-responsive-container" style="overflow:hidden; position:relative; border-radius: 3%; height: 500px;">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKohkaFoundation%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="100%" style="border:none;overflow:hidden;position:absolute; top:0; left:0; width:100%; height:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- //udpdated facebook section starts ends-->
+
+<!-- //event section -->
+    <!-- <section class="ftco-section bg-light">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
@@ -356,12 +408,12 @@
                 <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
                 <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
                 <p>United in purpose, driven by compassion, we pave the path for a brighter tomorrow, one step at a time.</p>
-                <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+                <p><a href="Media_Press.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
               </div>
             </div>
-          </div>
+          </div> -->
          <!-- 2 event -->
-         <div class="col-md-4 d-flex ftco-animate">
+         <!-- <div class="col-md-4 d-flex ftco-animate">
           <div class="blog-entry align-self-stretch">
             <a href="#" class="block-20" style="background-image: url('images/event-3.jpg');">
             </a>
@@ -374,12 +426,12 @@
               <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
               <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
               <p>United in purpose, driven by compassion, we pave the path for a brighter tomorrow, one step at a time.</p>
-              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+              <p><a href="Media_Press.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- 3 -->
-        <div class="col-md-4 d-flex ftco-animate">
+        <!-- <div class="col-md-4 d-flex ftco-animate">
           <div class="blog-entry align-self-stretch">
             <a href="#" class="block-20" style="background-image: url('images/event-2.jpg');">
             </a>
@@ -392,24 +444,22 @@
               <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
               <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
               <p>United in purpose, driven by compassion, we pave the path for a brighter tomorrow, one step at a time.</p>
-              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
+              <p><a href="Media_Press.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
             </div>
           </div>
         </div>
-          
+           -->
         <!-- 4 -->
         
-        </div>
+        <!-- </div>
       </div>
-    </section>
+    </section> -->
 		
 		<section class="ftco-section-3 img" style="background-image: url(images/bg_3.jpg);">
     	<div class="overlay"></div>
     	<div class="container">
     		<div class="row d-md-flex">
-    		<div class="col-md-6 d-flex ftco-animate">
-    			<div class="img img-2 align-self-stretch" style="background-image: url(images/bg_4.jpg);"></div>
-    		</div>
+    	
     		<div class="col-md-6 volunteer pl-md-5 ftco-animate">
     			<h3 class="mb-3">Be a volunteer</h3>
     			<form action="#" class="volunter-form">
@@ -426,7 +476,10 @@
               <input type="submit" value="Send Message" class="btn btn-white py-3 px-5">
             </div>
           </form>
-    		</div>    			
+    		</div>  
+        <div class="col-md-6 d-flex ftco-animate">
+    			<div class="img img-2 align-self-stretch" style="background-image: url(images/bg_4.jpg);"></div>
+    		</div>  			
     		</div>
     	</div>
     </section>
@@ -455,8 +508,8 @@
                 <li><a href="#" class="py-2 d-block">About</a></li>
                 <li><a href="#" class="py-2 d-block">Donate</a></li>
                 <li><a href="#" class="py-2 d-block">Causes</a></li>
-                <li><a href="#" class="py-2 d-block">Event</a></li>
-                <li><a href="#" class="py-2 d-block">Blog</a></li>
+                <li><a href="#" class="py-2 d-block">Media & Press</a></li>
+                <!-- <li><a href="#" class="py-2 d-block">Blog</a></li> -->
               </ul>
             </div>
           </div>
@@ -465,11 +518,13 @@
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">B-302 VENUS VASANT VALLEY,
+	                <!-- <li><span class="icon icon-map-marker"></span><span class="text">B-302 VENUS VASANT VALLEY,
 
                     FILM CITY ROAD, MALAD - EAST,
                     
-                    MUMBAI - 400097 </span></li>
+                    MUMBAI - 400097 </span></li> -->
+                    <li><span class="icon icon-map-marker"></span><span class="text"> Mumbai,Maharashtra
+                      & <br>Seoni District, Madhya Pradesh </span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 7747916097 / 9820282307</span></a></li>
 	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">kohkafoundation@gmail.com</span></a></li>
 	              </ul>
