@@ -29,29 +29,49 @@
   </head>
   <body>
     
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <img src="images/kf.jpg" style="border-radius: 50%;margin: 1px 15px;height:50px;overflow: hidden;">
-      <a class="navbar-brand" href="index.html">Kohka Foundation</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="Our_Story.html" class="nav-link">Our Story</a></li>
-          <li class="nav-item"><a href="Our_Projects.html" class="nav-link">Our Projects</a></li>
-          <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
-          <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li class="nav-item active"><a href="Media_Press.html" class="nav-link">Media & Press</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+     <!-- NAVBAR SECTION STARTS -->
+     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <!-- new stick button changes -->
+      <!-- <button style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer; z-index: 1000;" onmouseover="this.style.backgroundColor='#d32f2f'" onmouseout="this.style.backgroundColor='#f44336'">Donate Now</button> -->
+      <button id="donate-button" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer; z-index: 1000;" onmouseover="this.style.backgroundColor='#d32f2f'" onmouseout="this.style.backgroundColor='#f44336'" onclick="window.location.href = 'donate.html';">Donate Now</button>
+  
+      <script>
+        window.addEventListener('resize', function() {
+          var donateButton = document.getElementById('donate-button');
+    
+          if (window.innerWidth <= 600) {
+            donateButton.textContent = 'Donate';
+          } else {
+            donateButton.textContent = 'Donate Now';
+          }
+        });
+      </script>
+      <!-- new stick button changes end -->
+      <div class="container">
+        <a href="index.html">
+        <img src="images/kf.jpg" style="border-radius: 50%;margin: 1px 15px;height:50px;overflow: hidden;"></a>
+        <a class="navbar-brand" href="index.html" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Kohka Foundation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+  
+        <!-- nav bar -->
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li> -->
+            <li class="nav-item"><a href="Our_Story.html" class="nav-link">Our Story</a></li>
+            <li class="nav-item"><a href="Our_Projects.html" class="nav-link">Our Projects</a></li>
+            <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+            <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="Media_Press.html" class="nav-link">Media & Press</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <!-- nav bar -->
       </div>
-    </div>
-  </nav>
-    <!-- END nav -->
+    </nav>
+      <!-- NAVBAR SECTION END nav -->
     
     <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
