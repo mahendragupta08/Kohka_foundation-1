@@ -7476,8 +7476,22 @@ h1, h2, h3, h4, h5,
 .hero-wrap {
   width: 100%;
   height: calc(100vh - 117px);
-  min-height: 700px;
+  min-height: 750px;
   position: relative; }
+
+  .Secv_edu {
+    width: 100%;
+    height: calc(100vh - 117px);
+    min-height: 400px;
+    position: relative; }
+
+    .Secv_edu1{
+      padding-block: 10%;
+      width: 100%;
+      height: calc(100vh - 117px);
+      min-height: 400px;
+      position: relative; }
+
   .hero-wrap.hero-wrap-2 {
     height: 600px; }
   .hero-wrap .overlay {
